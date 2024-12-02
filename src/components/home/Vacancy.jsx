@@ -24,6 +24,12 @@ const Vacancy = () => {
             {/* card */}
             <JobCard />
             <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
           </div>
         </section>
       </Container>

@@ -2,7 +2,7 @@ import Container from "../container/Container";
 
 export default function HeroSection() {
   return (
-    <div className='relative px-8 pt-12'>
+    <div className='relative px-8 py-20'>
       <Container>
         <div className='absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-500/10 to-transparent' />
 
@@ -47,7 +47,22 @@ export default function HeroSection() {
               </div>
               <button className='px-8 py-4 rounded-full bg-white text-black hover:bg-gray-100 transition-colors flex items-center gap-2'>
                 Find Jobs
-                <span className='text-purple-600'>→</span>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  className='text-purple-600'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  class='lucide lucide-move-right'
+                >
+                  <path d='M18 8L22 12L18 16' />
+                  <path d='M2 12H22' />
+                </svg>
               </button>
             </div>
           </div>
