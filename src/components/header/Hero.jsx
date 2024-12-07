@@ -69,7 +69,7 @@ export default function HeroSection() {
 
           <div className='relative'>
             <img
-              src='/placeholder.svg?height=600&width=500'
+              src='/hrmrakib.png'
               alt='Professional'
               className='rounded-2xl'
             />

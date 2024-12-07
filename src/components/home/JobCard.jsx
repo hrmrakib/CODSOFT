@@ -1,17 +1,15 @@
-const JobCard = () => {
+const JobCard = ({ job }) => {
   return (
     <div className='border border-[#332C4C] p-5 rounded-xl mb-5'>
       <div>
         <div className='flex items-center justify-between'>
           <div className='flex items-center gap-5'>
             <div className='bg-[#17191F] border-2 border-[#8550EC] p-5 rounded-lg'>
-              <img src='/logo/c1.svg' alt='' />
+              <img src={job.logo} alt='' />
             </div>
             <div className='space-y-3'>
-              <h2 className='text-2xl text-white font-bold'>
-                Operations Manager
-              </h2>
-              <p className='text-lg text-white'>Pipe</p>
+              <h2 className='text-2xl text-white font-bold'>{job.title}</h2>
+              <p className='text-lg text-white'>{job.company}</p>
             </div>
           </div>
           <button className=' bg-white text-black font-bold px-5 py-2 rounded-3xl'>
@@ -43,7 +41,7 @@ const JobCard = () => {
               <path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20' />
               <path d='M2 12h20' />
             </svg>
-            <span>London</span>
+            <span>{job.location}</span>
           </p>
           <p className='text-white font-bold flex items-start gap-2'>
             <svg
@@ -82,7 +80,7 @@ const JobCard = () => {
               <circle cx='12' cy='12' r='2' />
               <path d='M6 12h.01M18 12h.01' />
             </svg>
-            <span>$50k</span>
+            <span>${job.salary}k</span>
           </p>
         </div>
       </div>

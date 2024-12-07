@@ -1,6 +1,57 @@
 import Container from "../container/Container";
 import JobCard from "./JobCard";
 
+const jobs = [
+  {
+    id: 1,
+    title: "Software Engineer",
+    company: "Apenio",
+    logo: "/assets/company/c1.svg",
+    location: "San Francisco",
+    salary: "1200",
+  },
+  {
+    id: 2,
+    title: "Operation Manager",
+    company: "Fanto",
+    logo: "/assets/company/c2.svg",
+    location: "San Francisco",
+    salary: "1500",
+  },
+  {
+    id: 3,
+    title: "UI/UX Designer",
+    company: "CreativeCo",
+    logo: "/assets/company/c3.svg",
+    location: "New York",
+    salary: "2000",
+  },
+  {
+    id: 4,
+    title: "Data Analyst",
+    company: "DataMind",
+    logo: "/assets/company/c4.svg",
+    location: "Austin",
+    salary: "1800",
+  },
+  {
+    id: 5,
+    title: "Account Officer",
+    company: "Masllo",
+    logo: "/assets/company/c2.svg",
+    location: "New Jersey",
+    salary: "2200",
+  },
+  {
+    id: 6,
+    title: "Full Stack Developer",
+    company: "Tinalo",
+    logo: "/assets/company/c1.svg",
+    location: "Denmark",
+    salary: "2500",
+  },
+];
+
 const Vacancy = () => {
   return (
     <div>
@@ -21,15 +72,9 @@ const Vacancy = () => {
 
         <section className='mt-10'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
-            {/* card */}
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
-            <JobCard />
+            {jobs.map((job) => (
+              <JobCard job={job} />
+            ))}
           </div>
         </section>
       </Container>
